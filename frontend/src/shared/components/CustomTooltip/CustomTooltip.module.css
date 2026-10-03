@@ -1,0 +1,17 @@
+.Tooltip {
+  background-color: var(--color-surface);
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+.Tooltip > p {
+  font-size: 0.5rem;
+}
+.TooltipName {
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+.TooltipValue > span {
+  font-weight: 800;
+  color: var(--color-primary);
+}

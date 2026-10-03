@@ -1,0 +1,20 @@
+.legendContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  font-size: 0.563rem; /* 9px when root is 16px */
+  gap: 0.5rem;
+}
+
+.legendColor {
+  width: 0.75rem;
+  height: 0.75rem;
+  flex: 0 0 0.75rem;
+  border-radius: 30%;
+}

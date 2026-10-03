@@ -1,0 +1,27 @@
+.app-shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 16rem minmax(0, 1fr);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.app-shell h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.app-shell p {
+  margin: 0;
+}
+.nav-container {
+  position: sticky;
+  top: 0;
+
+  min-height: 100vh;
+  align-self: start;
+
+  border-right: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+}

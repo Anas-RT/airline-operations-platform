@@ -1,0 +1,38 @@
+.filterBar {
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+}
+.dropdownContainer {
+  flex: 2 1 0;
+  display: flex;
+  gap: 0.5rem;
+}
+.dropdownContainer > * {
+  flex: 1 1 0;
+}
+.buttonsContainer {
+  flex: 1 1 0;
+  display: flex;
+  gap: 0.5rem;
+}
+.buttonsContainer > button {
+  text-align: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: none;
+}
+
+.applyButton {
+  flex: 2 1 0;
+  color: var(--color-text-light);
+  background-color: var(--color-primary);
+}
+.resetButton {
+  flex: 1 1 0;
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  border: none;
+}

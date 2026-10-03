@@ -1,0 +1,39 @@
+.insightPoint {
+  text-align: left;
+  padding: 0.5rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+}
+.number {
+  width: 2rem;
+  height: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 0.5rem;
+  font-size: 0.5rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  background-color: color-mix(in srgb, var(--color-lavender) 40%, white);
+
+  flex-shrink: 0;
+}
+
+.attention {
+  color: var(--color-danger);
+  background-color: color-mix(in srgb, var(--color-danger) 40%, white);
+}
+.title {
+  margin: 0;
+  padding: 0;
+  font-size: 0.75rem;
+}
+.description {
+  font-size: 0.5rem;
+  color: var(--color-muted);
+}

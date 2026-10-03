@@ -1,0 +1,46 @@
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+appsettings.Development.json
+
+# .NET build output
+bin/
+obj/
+TestResults/
+
+# Node/Vite output
+node_modules/
+dist/
+coverage/
+
+# Python local environment and cache
+.venv/
+__pycache__/
+*.pyc
+
+# Data files should be deliberately added, not swept in accidentally
+data/
+*.parquet
+*.duckdb
+*.csv
+*.xlsx
+# Visual Studio local state
+.vs/
+*.csproj.user
+
+# Generated frontend build output
+frontend/dist/
+
+*storybook.log
+storybook-static
+# Default Storybook demo files kept locally
+frontend/src/stories/

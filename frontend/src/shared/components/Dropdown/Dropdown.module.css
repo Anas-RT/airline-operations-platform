@@ -1,0 +1,27 @@
+.dropdownContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.dropdownContainer p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.dropdownContainer select {
+  flex: 1 1 0;
+  border: 1px solid var(--color-border);
+  padding: 0.5rem 1rem;
+  border-radius: 0.7rem;
+  font-weight: 500;
+  background-color: var(--color-surface);
+  font-size: 1rem;
+  color: var(--color-text);
+  cursor: pointer;
+}

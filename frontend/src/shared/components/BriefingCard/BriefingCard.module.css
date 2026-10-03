@@ -1,0 +1,48 @@
+.briefingCard {
+  display: flex;
+  align-items: stretch;
+  gap: 1rem;
+  background:
+    radial-gradient(
+      circle at 90% 0%,
+      rgba(123, 103, 234, 0.13),
+      transparent 33%
+    ),
+    linear-gradient(135deg, #f8f6ff, #ffffff 64%);
+  border-radius: 1rem;
+  padding: 1.3rem 1rem;
+  box-shadow: var(--shadow-sm);
+}
+.briefingContent {
+  flex: 1.4 1 0;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 0.3rem;
+}
+.briefingContent > .briefingEyebrow {
+  margin: 0;
+  padding: 0;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--color-primary);
+}
+.briefingContent > .briefingHeadline {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+.briefingContent > .briefingSummary {
+  margin: 0;
+  padding: 0;
+  font-size: 0.75rem;
+  color: var(--color-muted);
+}
+.briefingPoints {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

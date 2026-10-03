@@ -1,0 +1,29 @@
+.kpiCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--color-surface);
+  box-shadow: -1px 1px 15px 3px rgba(0, 0, 0, 0.05);
+}
+.kpiCard > .title {
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--color-muted);
+}
+
+.kpiCard > .kpi {
+  margin: 0;
+  padding: 0;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--color-primary);
+}
+
+.kpiCard > .description {
+  font-size: 0.75rem;
+  color: var(--color-muted);
+}
