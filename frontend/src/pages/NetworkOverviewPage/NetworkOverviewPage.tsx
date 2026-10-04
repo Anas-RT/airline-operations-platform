@@ -269,7 +269,11 @@ export default function NetworkOverviewPage() {
             {/******************************************************************************************* */}
             <div className={styles.outcomeMixCardContent}>
               {flightOutcomeMixObject ? (
-                <OutcomeMixChart data={outcomeMixData} />
+                <OutcomeMixChart
+                  data={outcomeMixData}
+                  total={flightOutcomeMixObject.totalFlights}
+                  totalLabel="flights"
+                />
               ) : (
                 <p>Loading outcome mix...</p>
               )}
@@ -334,23 +338,23 @@ export default function NetworkOverviewPage() {
             </div>
           </div>
         </div>
-        <div className={styles.nextSteps}>
+        <section className={styles.nextSteps}>
           <NarrativeCard
             eyebrow="Observed signal"
             title="Summer months show deterioration"
-            description="Punctuality and severe-delay pressure worsen during the summer months."
+            description="The network line identifies a concentrated seasonal weakness. "
           />
           <NarrativeCard
-            eyebrow="Observed signal"
-            title="Summer months show deterioration"
-            description="Punctuality and severe-delay pressure worsen during the summer months."
+            eyebrow="Interpretation"
+            title="Rate alone is incomplete"
+            description="Large carriers create operational impact even with moderate rates. "
           />
           <NarrativeCard
-            eyebrow="Observed signal"
-            title="Summer months show deterioration"
-            description="Punctuality and severe-delay pressure worsen during the summer months."
+            eyebrow="Next action"
+            title="Open Airline Performance"
+            description="Prioritise carriers where weak rate and high volume overlap. "
           />
-        </div>
+        </section>
       </div>
     </div>
   );

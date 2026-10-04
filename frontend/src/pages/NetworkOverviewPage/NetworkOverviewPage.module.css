@@ -371,7 +371,7 @@ to be worked on later for consistency======================
 /*=================================next steps=============================================*/
 .nextSteps {
   display: flex;
-  gap: 1rem;
+  justify-content: space-between;
   flex: 1 1 0;
   padding: 1rem;
   background-color: var(--color-surface);

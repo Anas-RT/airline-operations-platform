@@ -65,3 +65,13 @@
 .benchmarkChart {
   min-height: 20rem;
 }
+/*=================================next steps=============================================*/
+.nextSteps {
+  display: flex;
+  justify-content: space-between;
+  flex: 1 1 0;
+  padding: 1rem;
+  background-color: var(--color-surface);
+  box-shadow: -2px 1px 20px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 1rem;
+}

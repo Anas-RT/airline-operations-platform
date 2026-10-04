@@ -1,10 +1,13 @@
+import { formatCompactNumber } from "../../../Utils/formatters";
 import CustomTooltip from "../CustomTooltip/CustomTooltip";
 import styles from "./OutcomeMixChart.module.css";
 import { ResponsiveContainer, PieChart, Tooltip, Pie } from "recharts";
 type Props = {
   data: { name: string; percentage: number; fill: string }[];
+  total?: number;
+  totalLabel?: string;
 };
-export default function OutcomeMixChart({ data }: Props) {
+export default function OutcomeMixChart({ data, total, totalLabel }: Props) {
   return (
     <div className={styles.chartContainer}>
       <ResponsiveContainer width="100%" height="100%">
@@ -26,6 +29,14 @@ export default function OutcomeMixChart({ data }: Props) {
           />
         </PieChart>
       </ResponsiveContainer>
+      {total && (
+        <div className={styles.centerLabel}>
+          <span className={styles.centerLabelValue}>
+            {formatCompactNumber(total)}
+          </span>
+          {totalLabel && <p className={styles.centerLabelText}>{totalLabel}</p>}
+        </div>
+      )}
     </div>
   );
 }

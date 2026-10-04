@@ -54,7 +54,20 @@ export default function BubbleChart(props: BubbleChartProps) {
           range={props.range ?? [60, 100]}
           name="Z"
         />
-        <Tooltip content={<CustomTooltip />} />
+        <Tooltip
+          content={(props) => (
+            <CustomTooltip
+              active={props.active}
+              payload={props.payload?.map((item) => ({
+                value: Number(item.x),
+                payload: {
+                  name: String(item.name),
+                  percentage: Number(item.x),
+                },
+              }))}
+            />
+          )}
+        />
         <Scatter
           name="Bubbles"
           data={props.data}

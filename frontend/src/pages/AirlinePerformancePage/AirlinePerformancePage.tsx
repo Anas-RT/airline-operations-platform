@@ -333,6 +333,25 @@ export default function AirlinePerformancePage() {
           totalCount={airlineScoreCard?.totalCount || 0}
         />
       </section>
+      <section className={styles.nextSteps}>
+        <NarrativeCard
+          eyebrow="Observed signal"
+          title="American has a moderate rate gap"
+          description="Its performance is weaker than the network, but it is not the worst percentage."
+        />
+
+        <NarrativeCard
+          eyebrow="Interpretation"
+          title="Scale creates the operational impact"
+          description="The carrier produces many more severe-delay cases than smaller rate outliers."
+        />
+
+        <NarrativeCard
+          eyebrow="Next action"
+          title="Open Delay Severity"
+          description="Identify which delay bands and drivers create the largest impact."
+        />
+      </section>
     </div>
   );
 }

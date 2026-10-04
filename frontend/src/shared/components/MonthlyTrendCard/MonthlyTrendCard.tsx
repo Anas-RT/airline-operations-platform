@@ -130,12 +130,18 @@ export default function MonthlyTrendChart({
           />
 
           <Tooltip
-            content={<CustomTooltip />}
-            cursor={{
-              stroke: "#7b67ea",
-              strokeDasharray: "4 4",
-              strokeOpacity: 0.3,
-            }}
+            content={(props) => (
+              <CustomTooltip
+                active={props.active}
+                payload={props.payload?.map((item) => ({
+                  value: Number(item.value),
+                  payload: {
+                    name: String(item.name),
+                    percentage: Number(item.value),
+                  },
+                }))}
+              />
+            )}
           />
 
           <Area
