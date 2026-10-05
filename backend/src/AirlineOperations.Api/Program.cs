@@ -28,6 +28,8 @@ builder.Services.AddScoped<INetworkOverviewRepository,NetworkOverviewRepository>
 builder.Services.AddScoped<INetworkOverviewService,NetworkOverviewService>();
 builder.Services.AddScoped<IAirlinePerformanceRepository, AirlinePerformanceRepository>();
 builder.Services.AddScoped<IAirlinePerformanceService, AirlinePerformanceService>();
+builder.Services.AddScoped<IDelaySeverityRepository, DelaySeverityRepository>();
+builder.Services.AddScoped<IDelaySeverityService, DelaySeverityService>();
 builder.Services.AddControllers();
 
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
